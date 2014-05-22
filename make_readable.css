@@ -1,0 +1,55 @@
+.confluent-title {
+  font-size: 350%;
+}
+
+.confluent-navigation {
+  margin-top: -2% !important;
+}
+
+.confluent-h1 {
+  line-height: 150%;
+  font-size: 225% !important;
+}   
+
+.confluent-h2 {
+  line-height: 150%;
+  font-size: 150% !important;
+}
+
+.confluent-h3 {
+  line-height: 150%;
+  font-size: 135% !important;
+}
+
+.confluent-h4 {
+  line-height: 150%;
+  font-size: 115% !important;
+}
+
+.confluent-h5 {
+  line-height: 130%;
+  font-size: 105% !important;
+}
+
+.confluent-a, .confluent-a:hover, .confluent-a:active, .confluent-a:visited {
+  text-decoration: none !important;
+  color: rgb(34, 34, 34) !important;
+}
+
+.confluent-toc {
+  font-size: 75% !important;
+}
+
+.confluent-toc ul {
+  list-style: none !important;
+  width: 200%;
+}
+
+.confluent-toc ul li ul {
+  list-style: none !important;
+  display: none;
+}
+
+.confluent-toc ul li:hover ul, .confluent-toc ul li:hover ul li {
+  display: block;
+}
