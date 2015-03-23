@@ -5,6 +5,10 @@ Confluence is a [pretty whack documentation tool](http://en.wikipedia.org/wiki/C
 
 So I made Confluent! Confluent only works on HTTPS pages with /confluence/display/ or /confluence/pages/ in the URL. It restyles some elements to make articles easier to read.
 
+Where Can I Get This?
+===========
+[Right Here!](https://chrome.google.com/webstore/detail/gacmfpkmfkmgdhnajchhailklpjoefdo/publish-accepted)
+
 
 Dope Dope I'd Love To Help
 ===========
