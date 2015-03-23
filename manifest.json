@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Confluent",
-  "description": "Make Confluent articles easier and more pleasant to read",
+  "description": "Make Confluence articles easier and more pleasant to read",
   "version": "0.1",
 
   "browser_action": {
