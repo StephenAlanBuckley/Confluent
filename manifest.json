@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Confluent",
-  "description": "Make Etsy Confluent articles easier and more pleasant to read",
+  "description": "Make Confluent articles easier and more pleasant to read",
   "version": "0.1",
 
   "browser_action": {
@@ -13,7 +13,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["https://jira.etsycorp.com/confluence/display/*", "https://jira.etsycorp.com/confluence/pages/*"],
+      "matches": ["https://*/confluence/display/*", "https://*/confluence/pages/*"],
       "css": ["make_readable.css"],
       "js": ["jquery.js", "jquery-ui.js", "make_readable.js"]
     }
