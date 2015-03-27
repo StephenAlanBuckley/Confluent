@@ -10,6 +10,8 @@ $(document).ready(function() {
     }
   });
 
+  chrome.runtime.onMessage.addListener(coordinateExtensionMessage);
+
   $("#confluent_read_link").on("click", function() {
     changeReadingMode();
   });
@@ -24,6 +26,12 @@ $(document).ready(function() {
     chrome.storage.sync.set({"theme" : theme}, function() {
       message('saved!');
     });
+  }
+
+  function coordinateExtensionMessage(message, sender, callWithResponse) {
+    if (message.action == 'changeReadingMode') {
+      changeReadingMode();
+    }
   }
 
   function changeReadingMode() {
