@@ -13,4 +13,7 @@ Where Can I Get This?
 Dope Dope I'd Love To Help
 ===========
 
-Cool! The Confluent code is (right now) pretty light. Feel free to dive in and add things! If there's any serious activity I'll update the extension on the Chrome Extension Store.
+Cool! The Confluent code is (right now) pretty light. Feel free to dive in and add things! If there's any serious activity I'll update the extension on the Chrome Extension Store. Git clone away.
+
+Features Added Since Last Web Store Release:
+- clicking on the extension icon now toggles reading mode
