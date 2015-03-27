@@ -1,18 +1,17 @@
 $(document).ready(function() {
+  //Add the read button to the page
   $(".ajs-menu-bar").append("<li class='ajs-button normal'><a id='confluent_read_link'><span><u>R</u>ead</span></a></li>");
 
-  var Confluent = {
-    read_mode : false
-  };
+  var read_mode = false;
 
   $("body").keyup(function(e) {
     if (e.keyCode === 222) { //the ' key
-      changeReadingMode(Confluent);
+      changeReadingMode();
     }
   });
 
   $("#confluent_read_link").on("click", function() {
-    changeReadingMode(Confluent);
+    changeReadingMode();
   });
 
   function getThemeStorage() {
@@ -27,16 +26,16 @@ $(document).ready(function() {
     });
   }
 
-  function changeReadingMode(con) {
-    con.read_mode = !con.read_mode;
+  function changeReadingMode() {
+    read_mode = !read_mode;
     toggleLeftBar();
     toggleHeader();
     toggleTitle();
-    toggleMainContent(con.read_mode);
+    toggleMainContent();
     toggleHeaders();
     toggleLinks();
     toggleNavBar();
-    toggleTableOfContents() 
+    toggleTableOfContents()
   }
 
   function toggleLeftBar() {
@@ -51,7 +50,7 @@ $(document).ready(function() {
     $("#title-text").toggleClass('confluent-title');
   }
 
-  function toggleMainContent(read_mode) {
+  function toggleMainContent() {
     if(read_mode) {
       $("#main").animate({
         marginLeft: "5%",
